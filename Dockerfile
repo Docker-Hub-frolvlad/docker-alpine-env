@@ -1,6 +1,7 @@
 FROM alpine:3.2
 
 COPY ./bin/nsenter /usr/bin/nsenter
+COPY ./etc/inputrc /etc/inputrc
 
 # perl is required by git-submodule
 # less makes git log/diff colorful
