@@ -13,5 +13,7 @@ RUN apk add --no-cache bash-completion docker-bash-completion openssh-client git
         alias ls="ls --color=auto" ; \
         alias l="ls -lah" ; \
         alias ll="ls -lh" ; \
-    ' >> /root/.bashrc && \
+    ' >> /etc/bash.bashrc && \
     ln -sf vim /usr/bin/vi
+
+CMD ["bash", "--rcfile", "/etc/bash.bashrc"]
