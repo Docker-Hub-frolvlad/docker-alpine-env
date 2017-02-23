@@ -1,6 +1,5 @@
 FROM frolvlad/alpine-bash
 
-COPY ./bin/nsenter /usr/bin/nsenter
 COPY ./etc/inputrc /etc/inputrc
 
 # perl is required by git-submodule
