@@ -9,7 +9,7 @@ RUN apk add --no-cache \
         bash bash-completion docker-bash-completion \
         vim \
         htop iftop \
-        tmux fish mdocml-apropos && \
+        tmux fish mandoc-apropos && \
     echo '\
         . /etc/profile ; \
         PS1='\''\[\e[01;33m\][\h \u:\[\e[01;34m\]\w\[\e[01;33m\]]\[\e[00m\]\$ '\'' ; \
